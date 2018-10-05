@@ -1,0 +1,493 @@
+
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url('CaviarDreams-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url('CaviarDreams.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400');
+
+
+body{
+    background-image: url(../img/me.png);
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+}
+
+.top{
+    margin-top: 20px;
+}
+
+
+      .jumbotron{
+        background:transparent!important;
+        height: 800px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+      }
+
+      h1.display-1{
+        font-family: 'Caviar Dreams', sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 180px;
+        color: #B413BB;    
+      }
+
+/*---Name Top Styles---------*/
+
+#alex{
+     background-color: rgba(73,4,171,.8);
+     margin-bottom: 50px;
+}
+      h1.name{
+        font-family: 'Caviar Dreams', sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 40px;
+        color: #B413BB;   
+      }
+
+    .pink{
+        color: #B413BB; 
+    }
+
+     .pink:hover{
+        color: #fff; 
+    }
+
+    .chat{
+        color: #B413BB;
+        padding-left: 5px;
+        font-family: 'Oxygen', sans-serif;
+        font-weight: 400;
+        font-size:25px;
+        text-transform: uppercase; 
+    }
+
+    .chat:hover{
+        color: #fff; 
+        text-decoration: none;
+    }
+        span.job{
+        font-family: 'Caviar Dreams', sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 25px;
+        color: #fff;
+        letter-spacing: 2px;  
+        }
+
+      h2.display-2{
+        font-family: 'Caviar Dreams', sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 60px;
+        color: #fff;
+        letter-spacing: 2px;
+        margin-bottom: 25px;  
+      }
+
+      h4, a{
+        color: #000;
+      }
+
+      h4, a:hover{
+        text-decoration: none;
+        color: #fff;
+      }
+
+       p.lead-1{
+        font-family: 'Caviar Dreams', sans-serif;
+        font-style: normal;
+        font-size: 20px;
+        color: #fff;    
+      }
+
+        p.tools{
+            font-size: 15px;
+            color: #000;
+            font-family: 'Oxygen', sans-serif;
+            font-weight: 400; 
+        }
+
+       p.lead-2{
+        font-family: 'Oxygen', sans-serif;
+        font-style: normal;
+        font-size: 25px;
+        color: #fff;
+        font-weight: 300;    
+      }
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #B413BB;
+    border-color: #B413BB;
+}
+
+.btn-primary:hover{
+    color: #fff;
+    background-color: #4904AB;
+    border-color: #4904AB;
+}
+
+/*--Portfolio---*/
+#portfolio-content{
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+    #portfolio{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-color: rgba(180,19,187,.8);
+    }
+
+      .space{
+        margin-top:100px;
+      }
+
+    h1.portfolio-headings{
+        font-family: 'Caviar Dreams', sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 40px;
+        color: #fff;    
+      }
+
+         h3.display-3{
+        font-family: 'Oxygen', sans-serif;
+        font-weight:300;
+        font-style: normal;
+        font-size: 30px;
+        color: #fff;
+        letter-spacing: 2px;   
+      }
+
+      .portfolio-links{
+        margin-bottom:15px;
+        padding:0;
+      }
+
+      .portfolio-item{
+        font-size:25px;
+        font-family: 'Oxygen', sans-serif;
+        font-weight: 400;
+        padding:0px;
+      }
+
+       .portfolio-link:hover{
+        color:#B413BB;
+      }
+
+      .website{
+        color: #fff;
+        font-family: 'Oxygen', sans-serif;
+        font-size:25px;
+        font-weight: 400;
+      }
+
+        .website:hover{
+        color: #B413BB;
+      }
+
+/*---About---*/
+#about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(73,4,171,.8);
+}
+
+/*---Footer---*/
+footer, ul, li{
+  list-style-type: none;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+footer, ul, li, a{
+  color: #fff;
+}
+
+ul, li, a:hover{
+  color: #fff;
+}
+
+footer{
+  width: 100%;
+  height: 200px;
+  padding-top: 50px;
+
+}
+
+.footer-content{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.circle{
+    background-color:#B413BB;
+    padding:12px;
+    border-radius:5%;
+}
+
+.circle2{
+    background-color:#B413BB;
+    padding-top:12px;
+    padding-bottom:12px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius:5%;
+}
+
+.circle2:hover{
+    color: #B413BB;
+    background:#fff;
+    transition: .5s ease-out;
+}
+
+.circle3{
+    color:#fff;
+}
+
+.circle3:hover{
+    color: #B413BB;
+    transition: .5s ease-out;
+}
+
+
+.circle:hover{
+    color:#B413BB;
+    background:#fff;
+      transition: .5s ease-out;
+}
+
+
+
+/*----Image Hover Our Process and Premium Tequilas--*/
+
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background:rgba(73,4,171);
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 30%;
+  left: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px,0,0);
+  transform: translate3d(-10px,0,0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.hovereffect:hover img {
+  opacity: .2;
+  filter: alpha(opacity=40);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect h3 {
+  color: #fff;
+  font-family: 'Caviar Dreams', sans-serif;
+  text-align: center;
+  position: relative;
+  font-size:30px;
+  overflow: hidden;
+  padding: 0.5em 0;
+  background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.hovereffect h3:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%,0,0);
+  transform: translate3d(-100%,0,0);
+}
+
+.hovereffect:hover h3:after {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #fff;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+
+
+/*---Ipad Styles------*/
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px)  {
+.hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0%;
+    left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.hovereffect h3 {
+    color: #fff;
+    font-family: 'Caviar Dreams', sans-serif;
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+    overflow: hidden;
+    padding: 0.5em 0;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+}
+
+
+
+/*---Iphone Styles------*/
+@media only screen 
+and (min-width : 375px) 
+and (max-width : 667px) { 
+
+h1.display-1 {
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 80px;
+    color: #B413BB;
+}
+
+h2.display-2 {
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+}
+
+
+
+/*---Iphone Small Styles------*/
+
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 568px) { 
+
+h1.display-1 {
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 80px;
+    color: #B413BB;
+}
+
+h2.display-2 {
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.circle {
+    background-color: #B413BB;
+    padding: 5px;
+    border-radius: 5%;
+}
+
+.circle2{
+    background-color: #B413BB;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 5%;
+}
+
+span.job {
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.portfolio-item {
+    font-size: 18px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+    padding: 0px;
+}
+
+}
+
+
+
