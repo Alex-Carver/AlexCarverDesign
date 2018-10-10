@@ -25,6 +25,14 @@ body{
         background-attachment: fixed;
 }
 
+.animateMe{
+  opacity: 0;
+}
+ 
+.animateMe .animated{
+    opacity: 1;
+}
+
 .top{
     margin-top: 20px;
 }
