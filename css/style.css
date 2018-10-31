@@ -23,6 +23,9 @@ body{
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
+            opacity:0;
+    transition: opacity 2s;
+    -webkit-transition: opacity 2s; /* Safari */
 }
 
 .animateMe{
@@ -50,7 +53,8 @@ body{
         font-weight: bold;
         font-style: normal;
         font-size: 180px;
-        color: #B413BB;    
+        color: #B413BB; 
+        margin:0px;   
       }
 
 /*---Name Top Styles---------*/
@@ -133,7 +137,24 @@ body{
        p.lead-2{
         font-family: 'Oxygen', sans-serif;
         font-style: normal;
+        font-size: 22px;
+        color: #fff;
+        font-weight: 300; 
+        line-height: 25px;   
+      }
+
+         p.lead-3{
+        font-family: 'Oxygen', sans-serif;
+        font-style: normal;
         font-size: 25px;
+        color: #fff;
+        font-weight: 700;    
+      }
+
+          p.lead-4{
+        font-family: 'Oxygen', sans-serif;
+        font-style: normal;
+        font-size: 18px;
         color: #fff;
         font-weight: 300;    
       }
@@ -200,10 +221,11 @@ body{
       }
 
       .website{
-        color: #fff;
+        color: #B413BB;
         font-family: 'Oxygen', sans-serif;
-        font-size:25px;
-        font-weight: 400;
+        font-size:35px;
+        font-weight: 700;
+        margin-top: 10px;
       }
 
         .website:hover{
