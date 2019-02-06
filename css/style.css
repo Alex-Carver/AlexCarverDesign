@@ -1,78 +1,121 @@
-
 @font-face {
-    font-family: 'Caviar Dreams';
-    src: url('CaviarDreams-Bold.woff') format('woff');
-    font-weight: bold;
+    font-family: 'Super Grotesk Offc Pro';
+    src: url('SuperGroteskOffcPro-Medium.ttf') format('truetype');
+    font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Caviar Dreams';
-    src: url('CaviarDreams.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Minion Pro';
+    src: url('MinionPro-Medium.ttf') format('truetype');
+    font-weight: 500;
     font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400');
+
+body{
+    background-image: url('../img/bodySpace.svg');
+    background-repeat: no-repeat;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    background-color: #000;
+}
+
+.row{ display: flex; align-items: center;}
+
+.fixed-top.scrolled {
+  background-color: rgba(73,4,171,.7)!important;
+  transition: background-color 600ms linear;
+}
+
+.navbar-brand{
+  width:80px;
+}
+
+.bg-light {
+    background-color: transparent!important;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #FF8C3D;
+   text-decoration: line-through solid #FF8C3D;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-family: 'Minion Pro', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #FF8C3D;
+    transition: .3s ease-in;
+   text-decoration: line-through solid #FF8C3D;
+
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background:transparent!important;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 
 
-/*--body{
-    background-image: url(../img/me.png);
-        background-repeat: no-repeat;
-        height: 100vh;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-            opacity:0;
-    transition: opacity 2s;
-    -webkit-transition: opacity 2s; }/* Safari */
+.custom-toggler.navbar-toggler {
+  border-color: none;
+} 
 
-body {
-  width: 100%;
+a.dropdown-item {
+    color: #fff;
+    font-family: 'Minion Pro', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    letter-spacing: 2px;
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    text-align: inherit;
+    background-color: transparent!important;
+    border: 0;
+}
+
+a.dropdown-item:hover{
+     color: #FF8C3D;
+    transition: .3s ease-in;
+   text-decoration: line-through solid #FF8C3D;
+   background-color: transparent;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #fff;
+    text-align: left;
+    list-style: none;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: none;
+    border-radius: .25rem;
+    background-color: rgba(73,4,171,.7)!important;
+}
+
+header#home{
+  width:100%;
   height: 100vh;
-  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 15s ease infinite;
-  -moz-animation: Gradient 15s ease infinite;
-  animation: Gradient 15s ease infinite;
+  padding-top: 150px;
 }
-
-@-webkit-keyframes Gradient {
-  0% {
-    background-position: 0% 50%
-  }
-  50% {
-    background-position: 100% 50%
-  }
-  100% {
-    background-position: 0% 50%
-  }
-}
-
-@-moz-keyframes Gradient {
-  0% {
-    background-position: 0% 50%
-  }
-  50% {
-    background-position: 100% 50%
-  }
-  100% {
-    background-position: 0% 50%
-  }
-}
-
-@keyframes Gradient {
-  0% {
-    background-position: 0% 50%
-  }
-  50% {
-    background-position: 100% 50%
-  }
-  100% {
-    background-position: 0% 50%
-  }
-}
-
 
 
 .animateMe{
@@ -87,76 +130,59 @@ body {
     margin-top: 20px;
 }
 
+      
+/*---Portfolio Styles---------*/
 
-      .jumbotron{
-        background:transparent!important;
-        height: 800px;
-        padding-top: 200px;
-        padding-bottom: 200px;
-      }
+ 
+ 
+ section#heading{
+  padding-top: 100px;
+ }
 
-      h1.display-1{
-        font-family: 'Caviar Dreams', sans-serif;
-        font-weight: bold;
-        font-style: normal;
-        font-size: 180px;
-        color: #B413BB; 
-        margin:0px;   
-      }
 
-/*---Name Top Styles---------*/
 
-#alex{
-     background-color: rgba(73,4,171,.8);
-     margin-bottom: 50px;
+body#port{
+    width:100%;
+  height: 100vh;
+  position: relative;
+  background-image: url('../img/newPort.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin:0;
+  padding:0;
 }
-      h1.name{
-        font-family: 'Caviar Dreams', sans-serif;
-        font-weight: bold;
+
+.desktop{
+  max-height: 600px;
+}
+
+
+     h1.display-1{
+        font-family: 'Super Grotesk Offc Pro', sans-serif;
+        font-weight: 500;
         font-style: normal;
-        font-size: 40px;
-        color: #B413BB;   
-      }
-
-    .pink{
-        color: #B413BB; 
-    }
-
-     .pink:hover{
-        color: #fff; 
-    }
-
-    .chat{
-        color: #B413BB;
-        padding-left: 5px;
-        font-family: 'Oxygen', sans-serif;
-        font-weight: 400;
-        font-size:25px;
-        text-transform: uppercase; 
-    }
-
-    .chat:hover{
-        color: #fff; 
-        text-decoration: none;
-    }
-        span.job{
-        font-family: 'Caviar Dreams', sans-serif;
-        font-weight: normal;
-        font-style: normal;
-        font-size: 25px;
-        color: #fff;
-        letter-spacing: 2px;  
-        }
-
-      h2.display-2{
-        font-family: 'Caviar Dreams', sans-serif;
-        font-weight: normal;
-        font-style: normal;
-        font-size: 60px;
+        font-size: 80px;
         color: #fff;
         letter-spacing: 2px;
-        margin-bottom: 25px;  
+        text-transform:uppercase;
       }
+
+      h2.display-2{font-family: 'Minion Pro', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        color: #fff;   
+
+}
+
+      h3.display-3{font-family: 'Minion Pro', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        color: #4904AB;   
+
+}
 
       h4, a{
         color: #000;
@@ -168,116 +194,59 @@ body {
       }
 
        p.lead-1{
-        font-family: 'Caviar Dreams', sans-serif;
+        font-family: 'Minion Pro', sans-serif;
         font-style: normal;
-        font-size: 20px;
+        font-weight: normal;
+        font-size: 30px;
         color: #fff;    
       }
 
         p.tools{
             font-size: 15px;
             color: #000;
-            font-family: 'Oxygen', sans-serif;
-            font-weight: 400; 
+            font-family: 'Anodina', sans-serif;
+            font-style: normal;
+            font-weight: normal;
         }
 
        p.lead-2{
-        font-family: 'Oxygen', sans-serif;
-        font-style: normal;
+        font-family: 'Anodina', sans-serif;
         font-size: 22px;
         color: #fff;
-        font-weight: 300; 
+        font-style: normal;
+        font-weight: normal;
         line-height: 25px;   
       }
 
-         p.lead-3{
-        font-family: 'Oxygen', sans-serif;
-        font-style: normal;
-        font-size: 25px;
-        color: #fff;
-        font-weight: 700;    
-      }
 
-          p.lead-4{
-        font-family: 'Oxygen', sans-serif;
-        font-style: normal;
-        font-size: 18px;
-        color: #fff;
-        font-weight: 300;    
-      }
-
-
-.btn-primary {
+.btn-primary{
     color: #fff;
-    background-color: #B413BB;
-    border-color: #B413BB;
+    background-color: transparent;
+    border-color: #FF8C3D;
+    transition:.5s ease-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    width:180px;
+    height: 60px;
+    border-radius: 25px;
+    font-size: 30px;
 }
 
 .btn-primary:hover{
     color: #fff;
-    background-color: #4904AB;
-    border-color: #4904AB;
+    background-color: #FF8C3D;
+    border-color: #FF8C3D;
+    border-radius: 25px;
 }
 
-/*--Portfolio---*/
-#portfolio-content{
-    padding-top: 50px;
-    padding-bottom: 0px;
+/*--Illustration Style---*/
+
+.pAndI{
+  width:100%;
+  max-width: 500px;
+  height: auto;
 }
-    #portfolio{
-        padding-top: 100px;
-        padding-bottom: 100px;
-        background-color: rgba(180,19,187,.8);
-    }
 
-      .space{
-        margin-top:100px;
-      }
-
-    h1.portfolio-headings{
-        font-family: 'Caviar Dreams', sans-serif;
-        font-weight: bold;
-        font-style: normal;
-        font-size: 40px;
-        color: #fff;    
-      }
-
-         h3.display-3{
-        font-family: 'Oxygen', sans-serif;
-        font-weight:300;
-        font-style: normal;
-        font-size: 30px;
-        color: #fff;
-        letter-spacing: 2px;   
-      }
-
-      .portfolio-links{
-        margin-bottom:15px;
-        padding:0;
-      }
-
-      .portfolio-item{
-        font-size:25px;
-        font-family: 'Oxygen', sans-serif;
-        font-weight: 400;
-        padding:0px;
-      }
-
-       .portfolio-link:hover{
-        color:#B413BB;
-      }
-
-      .website{
-        color: #B413BB;
-        font-family: 'Oxygen', sans-serif;
-        font-size:35px;
-        font-weight: 700;
-        margin-top: 10px;
-      }
-
-        .website:hover{
-        color: #B413BB;
-      }
 
 /*---About---*/
 #about{
@@ -287,198 +256,28 @@ body {
 }
 
 /*---Footer---*/
-footer, ul, li{
-  list-style-type: none;
-  display: inline-block;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-footer, ul, li, a{
-  color: #fff;
-}
-
-ul, li, a:hover{
-  color: #fff;
-}
 
 footer{
-  width: 100%;
-  height: 200px;
-  padding-top: 50px;
+ width:100%;
+ padding:0px;
+ margin:0px;
+ padding-top: 100px;
+ height: auto;
 
 }
 
-.footer-content{
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.circle{
-    background-color:#B413BB;
-    padding:12px;
-    border-radius:5%;
-}
-
-.circle2{
-    background-color:#B413BB;
-    padding-top:12px;
-    padding-bottom:12px;
-    padding-left: 18px;
-    padding-right: 18px;
-    border-radius:5%;
-}
-
-.circle2:hover{
-    color: #B413BB;
-    background:#fff;
-    transition: .5s ease-out;
-}
-
-.circle3{
-    color:#fff;
-}
-
-.circle3:hover{
-    color: #B413BB;
-    transition: .5s ease-out;
-}
-
-
-.circle:hover{
-    color:#B413BB;
-    background:#fff;
-      transition: .5s ease-out;
-}
-
-
-
-/*----Image Hover Our Process and Premium Tequilas--*/
-
-
-.hovereffect {
-  width: 100%;
-  height: 100%;
-  float: left;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  cursor: default;
-  background:rgba(73,4,171);
-}
-
-.hovereffect .overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  top: 30%;
-  left: 0;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.hovereffect img {
-  display: block;
-  position: relative;
-  max-width: none;
-  width: calc(100% + 20px);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-10px,0,0);
-  transform: translate3d(-10px,0,0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.hovereffect:hover img {
-  opacity: .2;
-  filter: alpha(opacity=40);
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
-
-.hovereffect h3 {
+p.copyright{
+  font-family: 'MinionPro-Medium';
+  font-size: 15px;
   color: #fff;
-  font-family: 'Caviar Dreams', sans-serif;
-  text-align: center;
-  position: relative;
-  font-size:30px;
-  overflow: hidden;
-  padding: 0.5em 0;
-  background-color: transparent;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-.hovereffect h3:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #fff;
-  content: '';
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform: translate3d(-100%,0,0);
-  transform: translate3d(-100%,0,0);
-}
-
-.hovereffect:hover h3:after {
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
-
-.hovereffect a, .hovereffect p {
-  color: #fff;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(100%,0,0);
-  transform: translate3d(100%,0,0);
-}
-
-.hovereffect:hover a, .hovereffect:hover p {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+  padding:0px;
+  margin:0px;
 }
 
 
 
-/*---Ipad Styles------*/
-@media only screen 
-and (min-width : 768px) 
-and (max-width : 1024px)  {
-.hovereffect .overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    overflow: hidden;
-    top: 0%;
-    left: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.hovereffect h3 {
-    color: #fff;
-    font-family: 'Caviar Dreams', sans-serif;
-    text-align: center;
-    position: relative;
-    font-size: 25px;
-    overflow: hidden;
-    padding: 0.5em 0;
-    background-color: transparent;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
 
 
-}
 
 
 
@@ -486,24 +285,40 @@ and (max-width : 1024px)  {
 @media only screen 
 and (min-width : 375px) 
 and (max-width : 667px) { 
-
-h1.display-1 {
-    font-family: 'Caviar Dreams', sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 80px;
-    color: #B413BB;
+.left{
+  text-align: center!important;
 }
 
-h2.display-2 {
-    font-family: 'Caviar Dreams', sans-serif;
+.center{
+  text-align: center!important;
+}
+
+    h1.display-1{
+        font-family: 'Super Grotesk Offc Pro', sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 40px;
+        color: #fff;
+        letter-spacing: 2px;
+        text-transform:uppercase;
+      }
+
+       p.lead-1{
+        font-family: 'Minion Pro', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        color: #fff;    
+      }
+
+      h3.display-3 {
+    font-family: 'Minion Pro', sans-serif;
+    font-style: normal;
     font-weight: normal;
-    font-style: normal;
-    font-size: 40px;
-    color: #fff;
-    letter-spacing: 2px;
-    margin-bottom: 25px;
+    font-size: 30px;
 }
+
+
 
 }
 
@@ -515,56 +330,57 @@ h2.display-2 {
 and (min-width : 320px) 
 and (max-width : 568px) { 
 
-h1.display-1 {
-    font-family: 'Caviar Dreams', sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 80px;
-    color: #B413BB;
+.left{
+  text-align: center!important;
 }
 
-h2.display-2 {
-    font-family: 'Caviar Dreams', sans-serif;
+.center{
+  text-align: center!important;
+}
+
+    h1.display-1{
+        font-family: 'Super Grotesk Offc Pro', sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 40px;
+        color: #fff;
+        letter-spacing: 2px;
+        text-transform:uppercase;
+      }
+
+       p.lead-1{
+        font-family: 'Minion Pro', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        color: #fff;    
+      }
+
+          h3.display-3 {
+    font-family: 'Minion Pro', sans-serif;
+    font-style: normal;
     font-weight: normal;
-    font-style: normal;
-    font-size: 40px;
-    color: #fff;
-    letter-spacing: 2px;
-    margin-bottom: 25px;
-}
+    font-size: 30px;
 
-.circle {
-    background-color: #B413BB;
-    padding: 5px;
-    border-radius: 5%;
-}
 
-.circle2{
-    background-color: #B413BB;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 8px;
-    padding-right: 8px;
-    border-radius: 5%;
-}
-
-span.job {
-    font-family: 'Caviar Dreams', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 18px;
-    color: #fff;
-    letter-spacing: 2px;
-}
-
-.portfolio-item {
-    font-size: 18px;
-    font-family: 'Oxygen', sans-serif;
-    font-weight: 400;
-    padding: 0px;
-}
 
 }
+}
 
+
+/*---Ipad Styles------*/
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px)  {
+.left{
+  text-align: center!important;
+}
+
+.center{
+  text-align: center!important;
+}
+
+
+}
 
 

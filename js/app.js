@@ -1,4 +1,10 @@
-
+    $(function () {
+    $(document).scroll(function () {
+        var $nav = $(".fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+    });
+    
 function scrollWaypointInit( items, trigger ) {
   items.each( function() {
     var element = $(this),
@@ -29,3 +35,23 @@ $(document).ready(function(){
 scrollWaypointInit( $('.animateMe') );
 
 });
+
+$('.menu, .overlay').click(function () {
+    $('.menu').toggleClass('clicked');
+    
+    $('#nav').toggleClass('show');
+    
+});
+
+
+//Smooth scroll Effect
+$('a[href*="#"]').on('click', function (e) {
+    e.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top
+    }, 500, 'linear');
+});
+
+
+    
