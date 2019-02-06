@@ -1,3 +1,10 @@
+
+
+
+setTimeout(function(){        
+    $('.preloader').fadeOut('slow'); 
+}, 2000);
+
     $(function () {
     $(document).scroll(function () {
         var $nav = $(".fixed-top");
