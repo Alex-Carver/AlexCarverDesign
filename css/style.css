@@ -56,36 +56,32 @@
 
 
 /*--Green Balls--*/
-@keyframes greenBalls {
+@keyframes ballOne {
   0%   { opacity:.5; }
   50%  { opacity:1; }
   100% { opacity:.5; }
 }
-@-o-keyframes greenBalls {
+@-o-keyframes ballOne  {
   0%   { opacity:.5; }
   50%  { opacity:1; }
   100% { opacity:.5; }
 }
-@-moz-keyframes greenBalls {
+@-moz-keyframes ballOne   {
   0%   { opacity:.5; }
   50%  { opacity:1; }
   100% { opacity:.5; }
 }
-@-webkit-keyframes greenBalls {
+@-webkit-keyframes ballOne   {
   0%   { opacity:.5; }
   50%  { opacity:1; }
   100% { opacity:.5; }
 }
 #greenBalls, .planetMiddle {
-   -webkit-animation: greenBalls  3s infinite;
-   -moz-animation: greenBalls  3s infinite;
-   -o-animation: greenBalls  3s infinite;
-    animation: greenBalls  3s infinite;
+   -webkit-animation: ballOne   3s infinite;
+   -moz-animation: ballOne   3s infinite;
+   -o-animation: ballOne  3s infinite;
+    animation: ballOne   3s infinite;
 }
-
-
-
-
 
 .preloader {
    position: absolute;
@@ -127,7 +123,7 @@ body{
 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
     color: #FF8C3D;
-   text-decoration: line-through solid #FF8C3D;
+
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -141,7 +137,6 @@ body{
 .navbar-light .navbar-nav .nav-link:hover{
     color: #FF8C3D;
     transition: .3s ease-in;
-   text-decoration: line-through solid #FF8C3D;
 
 }
 
