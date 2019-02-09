@@ -17,38 +17,38 @@
 
 /*--Astro--*/
 #astro{
-    -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 1s infinite  alternate;
+    -webkit-animation: rocket 1s infinite  alternate;
+    animation: rocket 1s infinite  alternate;
 }
 #astro {
-    -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 1s infinite  alternate;
+    -webkit-animation: rocket 1s infinite  alternate;
+    animation: rocket 1s infinite  alternate;
 }
-@-webkit-keyframes mover {
+@-webkit-keyframes rocket {
     0% { transform: translateY(0); }
     100% { transform: translateY(-10px); }
 }
-@keyframes mover {
+@keyframes rocket {
     0% { transform: translateY(0); }
     100% { transform: translateY(-10px); }
 }
 
 
-/*--Rockert--*/
-#rocket, #fire{
-    -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 1s infinite  alternate;
+/*--Rocket--*/
+#rocket, #fire, #ships{
+    -webkit-animation: rocket 1s infinite  alternate;
+    animation: rocket 1s infinite  alternate;
 }
-#rocket, #fire {
-    -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 1s infinite  alternate;
+#rocket, #fire, #ships{
+    -webkit-animation: rocket 1s infinite  alternate;
+    animation: rocket 1s infinite  alternate;
 }
-@-webkit-keyframes mover {
+@-webkit-keyframes rocket {
     0% { transform: translateY(0); }
     100% { transform: translateY(-15px); }
 }
 
-@-webkit-keyframes mover {
+@-webkit-keyframes rocket {
     0% { transform: translateY(0); }
     100% { transform: translateY(-15px); }
 }
@@ -83,6 +83,125 @@
     animation: ballOne   3s infinite;
 }
 
+
+
+
+
+/*---Planet WebDEv----*/
+/*--Green Craters--*/
+@keyframes craters {
+  0%   { opacity:.5; }
+  50%  { opacity:1; }
+  100% { opacity:.5; }
+}
+@-o-keyframes craters  {
+  0%   { opacity:.5; }
+  50%  { opacity:1; }
+  100% { opacity:.5; }
+}
+@-moz-keyframes craters  {
+  0%   { opacity:.5; }
+  50%  { opacity:1; }
+  100% { opacity:.5; }
+}
+@-webkit-keyframes craters  {
+  0%   { opacity:.5; }
+  50%  { opacity:1; }
+  100% { opacity:.5; }
+}
+#greenCraters {
+   -webkit-animation: craters  2s infinite;
+   -moz-animation: craters   2s infinite;
+   -o-animation: craters  2s infinite;
+    animation: craters   2s infinite;
+}
+
+#monsterBody{
+    -webkit-animation: mover 4s infinite  alternate;
+    animation: mover 4s infinite  alternate;
+}
+#monsterBody {
+    -webkit-animation: mover 4s infinite  alternate;
+    animation: mover 4s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-200px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-200px); }
+}
+
+
+
+
+
+/*---Station----*/
+/*--Bolts--*/
+@keyframes boltLeft {
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-o-keyframes boltLeft  {
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-moz-keyframes boltLeft  {
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-webkit-keyframes boltLeft  {
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+#bolts {
+   -webkit-animation: boltLeft  2s infinite;
+   -moz-animation: boltLeft   2s infinite;
+   -o-animation: boltLeft  2s infinite;
+    animation: boltLeft   2s infinite;
+}
+
+
+
+/*---Photoshop----*/
+/*--Ufos--*/
+@keyframes ufoLights {
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-o-keyframes ufoLights {
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-moz-keyframes ufoLights {
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-webkit-keyframes ufoLights  {
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+#blueGlow, #beam {
+   -webkit-animation: ufoLights  2s infinite;
+   -moz-animation: ufoLights   2s infinite;
+   -o-animation: ufoLights  2s infinite;
+    animation: ufoLights  2s infinite;
+}
+
+
+
+
+
+
 .preloader {
    position: absolute;
    top: 0;
@@ -94,6 +213,23 @@
    background-repeat: no-repeat; 
    background-position: center;
    background-size: cover;
+}
+
+
+.svg-container { 
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; 
+  vertical-align: middle; 
+  overflow: hidden; 
+}
+
+#station { 
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 body{
