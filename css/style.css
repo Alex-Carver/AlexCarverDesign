@@ -400,6 +400,9 @@ and (max-width : 667px) {
     font-size: 30px;
 }
 
+.space{
+  margin-bottom: 15px;
+}
 
 
 }
@@ -444,8 +447,9 @@ and (max-width : 568px) {
     font-weight: normal;
     font-size: 30px;
 
-
-
+}
+.space{
+  margin-bottom: 15px;
 }
 }
 
@@ -460,6 +464,10 @@ and (max-width : 1024px)  {
 
 .center{
   text-align: center!important;
+}
+
+.space{
+  margin-bottom: 15px;
 }
 
 
