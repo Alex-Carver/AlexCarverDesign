@@ -479,7 +479,7 @@ footer{
  width:100%;
  padding:0px;
  margin:0px;
- padding-top: 100px;
+ padding-top: 60px;
  height: auto;
 
 }
@@ -537,7 +537,11 @@ and (max-width : 667px) {
 }
 
 .space{
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.margin{
+  margin-top:50px;
 }
 
 
@@ -585,7 +589,11 @@ and (max-width : 568px) {
 
 }
 .space{
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.margin{
+  margin-top:50px;
 }
 }
 
@@ -606,6 +614,9 @@ and (max-width : 1024px)  {
   margin-bottom: 15px;
 }
 
+.margin{
+  margin-top:50px;
+}
 
 }
 
