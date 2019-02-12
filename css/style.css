@@ -197,6 +197,41 @@
     animation: ufoLights  2s infinite;
 }
 
+/*--Web SVG Gears--*/
+#gearTop, #gearOne, #gearTwo{
+    -webkit-animation: gearTop  5s ;
+   -moz-animation: gearTop    5s ;
+   -o-animation: gearTop   5s ;
+    animation: gearTop  5s ;
+}
+@keyframes gearTop  {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*--Rocket--*/
+#ballTop{
+    -webkit-animation: ballTop 4s infinite  alternate;
+    animation: ballTop  4s infinite  alternate;
+}
+
+@-webkit-keyframes ballTop  {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(25px); }
+}
+
+@-webkit-keyframes ballTop  {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(25px); }
+}
+
+#ballBottom{
+    display: none;
+}
 
 
 
@@ -209,10 +244,12 @@
    width: 100%;
    height: 100%;
    z-index: 9999;
-   background-image: url('../img/spaceMan.gif');
+   background:#000;
    background-repeat: no-repeat; 
    background-position: center;
    background-size: cover;
+   align-items: center;
+   padding-top:50px;
 }
 
 
