@@ -12,7 +12,14 @@ hr {
   margin-right: auto;
   border-style: inset;
   border-width: 1px;
-} 
+}
+
+hr.small{
+   display: block;
+  border-top: 4px solid #1951C9!important;
+  width: 25%;
+  margin-left: 0;
+}
 
 .hero{
   height: 100vh;
@@ -68,12 +75,28 @@ p.get-in-touch{
   font-weight: 500;
 }
 
+.heading-p{
+   font-size: 25px;
+  font-family: "Roboto", serif;
+  color: #000;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
 .p-bold2{
    font-size: 20px;
   font-family: "Roboto", serif;
   color: #fff;
   line-height: 1.5;
   font-weight: 500;
+}
+
+p.small{
+   font-size: 12px;
+  font-family: "Roboto", serif;
+  color: #000;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 p.about{
@@ -91,6 +114,24 @@ p.about a{
 
 p.about a: hover{
   color: #1951C9; 
+}
+
+p.bold-link a{
+    line-height: 1.72222rem;
+  margin-bottom: 25px;
+    font-size: 35px;
+  font-family: "Roboto", serif;
+  color: #000;
+}
+
+.bold-link a: hover{
+  color: #fff;
+}
+
+a.project:hover{
+    color: #521AF1;
+     
+
 }
 
 a.contact{
@@ -136,6 +177,10 @@ section.bg-img-dc2{
     background-position: 50% 50%;
     height: 80vh;
     width: 100%;
+}
+
+.margin{
+  margin-bottom: 25px;
 }
 
 /*Portfolio bgs
