@@ -183,6 +183,32 @@ section.bg-img-dc2{
   margin-bottom: 25px;
 }
 
+/*Work Template preREO*/
+
+
+section.bg-img-prereo{
+    background-image: url("../images/prereo/bg-img-prereo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 80vh;
+    width: 100%;
+}
+
+section.bg-img-pre2{
+    background-image: url("../images/prereo/bg-img-pre2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 80vh;
+    width: 100%;
+}
+
+
+
+
+
+
 /*Portfolio bgs
 
 .port-bg{
@@ -1045,7 +1071,7 @@ textarea.form-control {
 }
 
 .navigation.nav-bg {
- background: linear-gradient(1567deg,#521AF1,#00FCD5);
+background: linear-gradient(1567deg,#521AF1,#00FCD5);
   padding: 15px 0px;
    box-shadow: 0 2px 2px -2px rgba(0,0,0,.5);
 }
@@ -1127,6 +1153,10 @@ textarea.form-control {
   .navigation.nav-bg {
     padding: 15px 20px;
     background: linear-gradient(1567deg,#521AF1,#00FCD5);
+}
+
+p.mobileP{
+  font-size: 15px;
 }
 
 .blob-image {
