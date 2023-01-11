@@ -204,7 +204,26 @@ section.bg-img-pre2{
     width: 100%;
 }
 
+/*Work Template AHP*/
 
+section.bg-img-ahp{
+    background-image: url("../images/ahp/bg-img-ahp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 80vh;
+    width: 100%;
+    /* background-attachment: fixed;*/
+}
+
+section.bg-img-pre2{
+    background-image: url("../images/prereo/bg-img-pre2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 80vh;
+    width: 100%;
+}
 
 
 
