@@ -226,6 +226,16 @@ section.bg-img-pre2{
 }
 
 
+/*Work Template Drink Up Shop*/
+section.bg-img-dus{
+    background-image: url("../images/DrinkUpShop/bg-img-dus.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 80vh;
+    width: 100%;
+    /* background-attachment: fixed;*/
+}
 
 
 /*Portfolio bgs
